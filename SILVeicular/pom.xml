@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.edu.ifrs.restinga.tcc.vrnery.SIPVeicular</groupId>
+  <artifactId>SIPVeicular</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SIPVeicular</name>
+  <description>Sistema de Identificação de Placa Veicular</description>
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+	<dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    	<version>1.2.17</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
+	<dependency>
+		<groupId>net.sourceforge.tess4j</groupId>
+		<artifactId>tess4j</artifactId>
+		<version>3.3.0</version>
+	</dependency>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.12</version>
+		<scope>test</scope>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/org.openpnp/opencv -->
+    <!-- <dependency>
+      <groupId>org.openpnp</groupId>
+      <artifactId>opencv</artifactId>
+      <version>3.2.0-0</version>
+    </dependency> -->
+  </dependencies>
+  <build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+      </plugin>
+      <plugin>
+        <groupId>com.zenjava</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>8.8.3</version>
+        <configuration>
+          <vendor>TCC-VRNERY-ADS</vendor>
+          <mainClass>br.edu.ifrs.restinga.tcc.vrnery.sipveicular.view.TelaInicial</mainClass>
+          <nativeInstallers />
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+</project>

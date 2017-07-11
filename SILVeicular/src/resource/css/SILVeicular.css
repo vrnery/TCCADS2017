@@ -1,0 +1,43 @@
+.root {
+	-fx-background-image: url("../image/ifrs.jpg");
+	/* -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, blue 0%, silver 100%); */
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.image-view {
+	
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    /*-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );*/
+}
+
+.menu .label {
+	-fx-text-fill: white;
+}
+
+.menu-bar {
+	-fx-background-color: black;
+}
+
+.menu-active {
+	-fx-background-color: limegreen;
+}
+
+.context-menu {
+	-fx-background-color: darkslategrey;
+}
